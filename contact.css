@@ -1,0 +1,177 @@
+/* NAVBAR */
+body{
+  
+  font-family: 'Poppins', sans-serif;
+}
+.navbar {
+  background-color: #3586ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 98.4%;
+  position: relative;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0 20px;
+  font-weight: 600; /* Increase font weight */
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e5e5e5;
+}
+
+/* Adding the underline on hover */
+.nav-links a:not(.sign-in-btn):hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -3px;
+  left: 0;
+}
+
+.sign-in-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* MAIN PAGE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+img{
+  height: 100%;
+  margin-top: 10px;
+  width: 33rem;
+  position: fixed;
+  padding-left: 33px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.contactform{
+  font-family: 'Poppins' , sans-serif;
+ padding-top: 0rem;
+ border-color: 84px rgb(0, 0, 0);
+ margin-top: 1rem;
+ margin-left: 747px;
+ border-radius: 55px;
+ color: rgb(0, 0, 0);
+ position: fixed;
+}
+
+
+.heading{
+  margin-left: 550px;
+    text-align: center;
+    margin-top:2rem;
+    padding-top: 1rem;
+    display: inline-block;
+    font-size: 2.5rem;
+    font-family: 'poppins';
+    color:#3586ff;
+    position: relative;
+    letter-spacing: .2rem;
+}
+
+.heading::before, .heading::after{
+  content: '';
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-top:.4rem solid #3586ff;
+  border-left:.4rem solid #3586ff
+}
+
+.heading::before{
+  top:0.8rem; left: -1rem;
+}
+
+.heading::after{
+  bottom:-.5rem; right: -1rem;
+  transform: rotate(180deg);
+}
+
+#firstname, #lastname, #usermail{
+  margin-bottom: 14px;
+  width: 300%;
+  height: 47px;
+  background-color: #eff0f0;
+  border-radius: 34px;
+  border: 2px solid white;
+}
+
+#message{
+  margin-top: 1.2px;
+  width: 300%;
+  height: 120px;
+  background-color: #eff0f0;
+  border-radius: 34px;
+  border: 2px solid white;
+}
+
+::placeholder{
+  color: rgb(119, 112, 112);
+  padding: 14px;
+}
+
+.send{
+ border-radius: 23px;
+ padding: 5px;
+ margin: 14px; 
+ width: 40%;
+ height: 45px;
+ color: rgb(255, 255, 255);
+ border: 2px solid white;
+ background-color: #0077D5;
+}
+
+.send:hover{
+ color: rgb(255, 255, 255);
+ background-color: #005A8C;
+}
+
+
+

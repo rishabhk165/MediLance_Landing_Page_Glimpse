@@ -1,0 +1,150 @@
+/* NAVBAR */
+
+body{
+  
+  font-family: 'Poppins', sans-serif;
+}
+.navbar {
+  background-color: #3586ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  font-weight: 600; /* Increase font weight */
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e5e5e5;
+}
+
+/* Adding the underline on hover */
+.nav-links a:not(.sign-in-btn):hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -3px;
+  left: 0;
+}
+
+.sign-in-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* MAIN CONTENT */
+*{
+    margin: 0;
+    padding: 0;
+    background-position: fixed;
+}
+img{
+    width: 674px;
+    /* background-color: #3586ff; */
+    position: fixed;
+    margin-top: 54px;
+}
+
+
+.heading{
+    margin-left: 550px;
+    text-align: center;
+    margin-top:15px;
+    padding-top: 1rem;
+    display: inline-block;
+    font-size: 2.5rem;
+    font-family: 'poppins';
+    color:#3586ff;
+    position: relative;
+    letter-spacing: .2rem;
+  }
+  .heading::before, .heading::after{
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top:.4rem solid #3586ff;
+    border-left:.4rem solid #3586ff
+  }
+  
+  .heading::before{
+    top:0.8rem; left: -1rem;
+  }
+  
+  .heading::after{
+    bottom:-.5rem; right: -1rem;
+    transform: rotate(180deg);
+  }
+
+  .content{
+    margin-top:55px;
+    margin-left: 755px; 
+    margin-right: 51px;
+    text-align: left;
+}
+
+.content-h2{
+    color:#3586ff ;
+    font-family:  sans-serif;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+.btn-about-us-read-more{
+  margin-top: 34px;
+  width: 122px;
+  color: white;
+  height:42px;
+  background-color: rgb(25, 132, 231);
+  border: 2px solid white;
+  border-radius: 34px;
+  font-family: 'poppins' , sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-about-us-read-more:hover{
+  background-color: #1a76d9;
+}
